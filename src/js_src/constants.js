@@ -3,8 +3,8 @@ export const LARGE_COL_CLASS = 'columns small-8 medium-9';
 export const NON_HIGHLIGHTED_FIELDS = ['sourceHref', 'href', 'category', 'homologs', 'paralogs', 'orthologs', 'homologs.symbol', 'homologs.panther_family'];
 export const SMALL_COL_CLASS = 'columns small-4 medium-3';
 let URL = process.env.PREVIEW_URL;
-if (URL != 'https://preview.qa.yeastgenome.org') {
-  URL = 'https://preview.yeastgenome.org';
+if (URL != 'https://www.qa.yeastgenome.org') {
+  URL = 'https://www.yeastgenome.org';
 }
 export const PREVIEW_URL = URL;
 export const ml_12 = {marginLeft:'12px'};
