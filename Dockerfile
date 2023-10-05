@@ -19,19 +19,19 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get purge -y curl unzip
 
 WORKDIR /data/www
-RUN git clone https://github.com/yeastgenome/SGDBackend-Nex2.git
+RUN git clone https://github.com/yeastgenome/SGDBackendDocker.git
 
 WORKDIR /data/www/logs
 
-WORKDIR /data/www/SGDBackend-Nex2
+WORKDIR /data/www/SGDBackendDocker
 RUN git checkout master_docker \
     && pip3 install virtualenv \
     && virtualenv venv \
     && . venv/bin/activate \
     && pip3 install -U setuptools==57.5.0 \
     && make build \
-    && chmod 755 /data/www/SGDBackend-Nex2/system_config/cron/* \
+    && chmod 755 /data/www/SGDBackendDocker/system_config/cron/* \
     && echo 'export $(strings /proc/1/environ | grep AWS_CONTAINER_CREDENTIALS_RELATIVE_URI)' >> /root/.profile
 
-#CMD ["sh", "-c", ". /data/www/SGDBackend-Nex2/venv/bin/activate && pserve $INI_FILE --reload"]
+#CMD ["sh", "-c", ". /data/www/SGDBackendDocker/venv/bin/activate && pserve $INI_FILE --reload"]
 CMD ["/bin/bash --reload"]

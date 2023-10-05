@@ -1,10 +1,10 @@
-# SGDBackend-Nex2
+# SGDBackendDocker
 
-[![Build Status](https://travis-ci.org/yeastgenome/SGDBackend-Nex2.svg)](https://travis-ci.org/yeastgenome/SGDBackend-Nex2) [![Coverage Status](https://coveralls.io/repos/github/yeastgenome/SGDBackend-Nex2/badge.svg?branch=qa)](https://coveralls.io/github/yeastgenome/SGDBackend-Nex2?branch=qa)
+[![Build Status](https://travis-ci.org/yeastgenome/SGDBackendDocker.svg)](https://travis-ci.org/yeastgenome/SGDBackendDocker) [![Coverage Status](https://coveralls.io/repos/github/yeastgenome/SGDBackendDocker/badge.svg?branch=qa)](https://coveralls.io/github/yeastgenome/SGDBackendDocker?branch=qa)
 
 A restful web service for the Saccharomyces Genome Database (SGD) NEX 2, as well as an authenticated curation interface.
 
-SGD API documentation can be found at https://github.com/yeastgenome/SGDBackend-Nex2/blob/master/docs/webservice.MD.
+SGD API documentation can be found at https://github.com/yeastgenome/SGDBackendDocker/blob/master/docs/webservice.MD.
 
 ## Setup
 

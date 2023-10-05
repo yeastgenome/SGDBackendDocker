@@ -13,6 +13,6 @@
 
 # For web environment in /etc/rc.local
 
-/bin/bash /data/www/SGDBackend-NEX2/current/system_config/cron/index_disambiguation.sh
+/bin/bash /data/www/SGDBackendDocker/current/system_config/cron/index_disambiguation.sh
 
 exit 0
