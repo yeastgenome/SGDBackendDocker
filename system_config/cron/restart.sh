@@ -1,6 +1,6 @@
 #! /bin/sh
 
-cd /data/www/SGDBackend-Nex2
+cd /data/www/SGDBackendDocker
 source /data/www/venv/bin/activate
 . prod_variables.sh
 /usr/bin/make stop-prod >/dev/null

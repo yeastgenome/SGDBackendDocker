@@ -5,7 +5,7 @@ MESSAGE_JSON_FILE="/tmp/message.json"
 
 echo "data_dump.sh start:  `/bin/date`" | /bin/tee $OUTPUT_FILE
 
-cd /data/www/SGDBackend-Nex2
+cd /data/www/SGDBackendDocker
 . venv/bin/activate && \
     python scripts/dumping/curation/dump_gff.py | /bin/tee -a $OUTPUT_FILE
 

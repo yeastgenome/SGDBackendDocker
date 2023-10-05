@@ -4,7 +4,7 @@ OUTPUT_FILE=/tmp/index_elasticsearch.out
 
 echo "index_elasticsearch.sh start:  `/bin/date`" | /bin/tee $OUTPUT_FILE
 
-cd /data/www/SGDBackend-Nex2
+cd /data/www/SGDBackendDocker
 
 # elasticsearch 7 script
 . venv/bin/activate && \

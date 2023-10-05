@@ -4,7 +4,7 @@ OUTPUT_FILE=/tmp/index_disambiguation.out
 
 echo "index_disambiguation.sh start:  `/bin/date`" | /bin/tee $OUTPUT_FILE
 
-cd /data/www/SGDBackend-Nex2
+cd /data/www/SGDBackendDocker
 . venv/bin/activate && \
     python scripts/disambiguation/index_disambiguation.py | /bin/tee -a $OUTPUT_FILE
 
